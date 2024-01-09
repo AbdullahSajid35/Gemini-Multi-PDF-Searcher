@@ -62,6 +62,14 @@ def main():
     if prompt:
         response=get_output(prompt)
         st.write(response['output_text'])
+    st.markdown(
+    """
+    <footer style="position: fixed; bottom: 0; width: 100%; text-align: left; padding: 10px;">
+        Developed by Abdullah Sajid
+    </footer>
+    """,
+    unsafe_allow_html=True
+)
 
 if __name__=='__main__':
     main()
